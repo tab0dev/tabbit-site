@@ -10,49 +10,16 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Tabbit" />
     <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- This website uses Umami Privacy focused analytics to get a sense for popularity. -->
+    <script defer src="https://umami-production-78f2.up.railway.app/script.js" data-website-id="41a2f6dc-a7c4-4229-b48f-9ca84ef61f68"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tabbit: close your tabs!</title>
-    <script type="module" crossorigin src="/assets/main-CG3a8S1l.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/main-De6lU8tE.css">
+    <script type="module" crossorigin src="/assets/main-DapCBnx6.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-CAKI_zMs.css">
   </head>
   <body>
     <div id="root"></div>
-
-    <!-- This website uses Umami Privacy focused analytics to get a sense for popularity. -->
-    <!-- This script stops Umami from blocking the first-contentful paint -->
-    <script>
-    (function () {
-      const UMAMI_SRC = "https://umami-production-78f2.up.railway.app/script.js";
-      const WEBSITE_ID = "41a2f6dc-a7c4-4229-b48f-9ca84ef61f68";
-
-      function loadUmami() {
-        if (window.__umamiLoaded) return;
-        window.__umamiLoaded = true;
-
-        const s = document.createElement("script");
-        s.src = UMAMI_SRC;
-        s.async = true;
-        s.setAttribute("data-website-id", WEBSITE_ID);
-        s.setAttribute("data-domains", "tabbit.website");
-        s.setAttribute("data-do-not-track", "true");
-        s.setAttribute("data-exclude-search", "true");
-        document.head.appendChild(s);
-      }
-
-      function scheduleUmami() {
-        if ("requestIdleCallback" in window) {
-          requestIdleCallback(loadUmami, { timeout: 5000 });
-        } else {
-          setTimeout(loadUmami, 3000);
-        }
-      }
-
-      if (document.readyState === "complete") {
-        scheduleUmami();
-      } else {
-        window.addEventListener("load", scheduleUmami, { once: true });
-      }
-    })();
-  </script>    
   </body>
 </html>
